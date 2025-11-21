@@ -5,16 +5,16 @@ repositories:
     url: https://github.com/agilexrobotics/limo_ros2.git
     version: humble
 
-  # 2. LiDAR 드라이버 (여기가 중요! main -> humble로 변경)
+  # 2. LiDAR 드라이버 (humble 버전 지정 필수)
   ydlidar_ros2_driver:
     type: git
     url: https://github.com/YDLIDAR/ydlidar_ros2_driver.git
     version: humble
 
-  # 3. 카메라 드라이버 (공개 저장소)
-  orbbec_camera:
+  # 3. 카메라 드라이버 (이름 변경됨: OrbbecSDK_ROS2)
+  OrbbecSDK_ROS2:
     type: git
-    url: https://github.com/orbbec/orbbec_camera.git
+    url: https://github.com/orbbec/OrbbecSDK_ROS2.git
     version: main
   
   # 4. SLAM 툴박스
@@ -22,3 +22,9 @@ repositories:
     type: git
     url: https://github.com/SteveMacenski/slam_toolbox.git
     version: humble
+
+  # 5. (나중에 추가) 팀 프로젝트용 커스텀 패키지
+  # limo_smart_sentinel:
+  #   type: git
+  #   url: https://github.com/dongmin8350/limo_smart_sentinel.git
+  #   version: main
